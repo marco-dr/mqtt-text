@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/theme/styles.php/space/1678549506_1/all">
+    <link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/filter/syntaxhighlighter/styles/atom-one-light.min.css">
+    <style>
+      body {margin: 5%;}
+    </style>
+  </head>
+  <body>
+    <h1>Ein CPS in Betrieb nehmen</h1>
+    <h2>MQTT-Broker und -Client verbinden</h2>
+<p>Um das MQTT-Protokoll einzusetzen, muss man einen Broker verwenden, der mit den MQTT-Clients kommuniziert. Ist&nbsp;im&nbsp;bestehenden&nbsp;Netzwerk bislang kein Broker eingerichtet, kann mithilfe eines „Raspberry&nbsp;Pi“ ein MQTT-Broker installiert
+    und verfügbar gemacht werden. Dafür&nbsp;eignet&nbsp;sich&nbsp;der Open-Source-Broker „Mosquitto“. Der&nbsp;Broker&nbsp;empfängt&nbsp;Nachrichten (Topics) von Clients und leitet den Inhalt des abonnierten Topics an interessierte Empfänger (Subscriber)
+    weiter. Ohne&nbsp;einen&nbsp;MQTT-Server als Broker können folglich keine Nachrichten von Clients empfangen und an die jeweiligen Empfänger weitergeleitet werden.<br></p>
+<p style="text-align: center;"><img src="https://lernen.rkibbw.de/draftfile.php/42/user/draft/181975280/Westermann%20CPS%20MQTT-Broker%20Node-RED.png" alt="Temperatursensor publish an MQTT-Broker Mosquito. Node-RED ist subscriber." width="882" height="495" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p>Neben einem MQTT-Broker wird außerdem ein grafisches Entwicklungswerkzeug benötigt, das sowohl Hardware und Schnittstellen als auch Services miteinander verbinden kann. Auch&nbsp;hier&nbsp;eignet&nbsp;sich ein Open-Source-Werkzeug für die Umsetzung.<br></p>
+<p style="text-align: center;"><img src="https://lernen.rkibbw.de/draftfile.php/42/user/draft/181975280/Westermann%20CPS%20Node-RED.png?time=1684008942890" alt="Fenster der Verwaltungsansicht von Node-RED." width="1076" height="603" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p>Die Open-Source-Software „Node-RED“ ermöglicht es, mit einem einfachen Baukastenprinzip einzelne Funktionen und Aktionen miteinander zu verbinden. Dafür&nbsp;nutzt&nbsp;die&nbsp;Software sogenannte Nodes (Knoten). Diese&nbsp;sind&nbsp;sehr&nbsp;einfach
+    miteinander zu verbinden. Das&nbsp;Ergebnis&nbsp;sind&nbsp;die sogenannten Flows, die verschiedene Eingabe-, Verarbeitungs- und Ausgaben-Nodes verbinden. Damit&nbsp;lassen&nbsp;sich IoT-Geräte kontrollieren und steuern. Jeder&nbsp;Node&nbsp;hat&nbsp;eine
+    definierte Aufgabe. Die&nbsp;Knotenpunkte&nbsp;können Daten erhalten, verarbeiten und an den nächsten Knoten weitergeben. Damit&nbsp;lassen&nbsp;sich&nbsp;einfache, aber auch komplexe Programmabläufe realisieren.<br></p>
+<p><br></p>
+  </body>
+</html>

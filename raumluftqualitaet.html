@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/theme/styles.php/space/1678549506_1/all">
+<link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/filter/syntaxhighlighter/styles/atom-one-light.min.css">
+<style>
+  body {margin: 5%;}
+</style>
+  </head>
+  <body>
+    <h1>Ein CPS in Betrieb nehmen</h1>
+    <h2>Raumluftqualität</h2>
+<p>Die Raumluftqualität kann mit CPS überwacht und beeinflusst werden. Sie ist in Büroräumen relevant und dient der Abwehr von Gefahren im Serverraum.</p>
+<p>Die Luftqualität in Arbeits- und Wohnräumen ist von großer Bedeutung. Viren&nbsp;und&nbsp;Bakterien können auf verschiedenen Wegen übertragen werden, so&nbsp;auch über die ausgeatmete Luft. In&nbsp;Form&nbsp;von&nbsp;Tröpfchen oder Aerosolen gelangen
+    sie in die Raumluft und verbreiten sich mühelos. Aerosole&nbsp;sind&nbsp;Kleinstpartikel, die&nbsp;über einen langen Zeitraum in der Raumluft verweilen können. So&nbsp;kann&nbsp;der&nbsp;CO<sub>2</sub>-Anteil, der&nbsp;durch die ausgeatmete Luft in
+    den Raum gelangt, als&nbsp;Referenz für die Luftqualität genutzt werden. Je&nbsp;höher&nbsp;der&nbsp;Anteil der ausgeatmeten Luft ist, desto höher ist auch der CO<sub>2</sub>-Anteil.<br></p>
+<h3>Raumluftkategorien</h3>
+<p>DIN EN 13779 stellt eine Klassifizierung der Raumluftqualität bereit. Die&nbsp;Raumluftkategorien&nbsp;werden mit IDA (für In-Door Air) und einer Nummer&nbsp;bezeichnet.<br></p>
+<table class="table description green">
+    <caption>Klassifizierung der Raumluftqualität nach DIN EN 13779: 2007-09 (DIN 2007-09)/IDA (= In-Door Air)</caption>
+    <thead>
+        <tr>
+            <th scope="col">Raumluftkategorie</th>
+            <th scope="col">Eigenschaften</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>IDA 1</td>
+            <td>Hohe Raumluftqualität
+                <ul>
+                    <li>Erhöhung der CO<sub>2</sub>-Konzentration gegenüber der Außenluft in ppm: &lt;&nbsp;400</li>
+                    <li>Absolute CO<sub>2</sub>-Konzentration in der Innenraumluft in ppm: &lt;&nbsp;800</li>
+                </ul>
+                <p></p>
+            </td>
+        </tr>
+        <tr>
+            <td>IDA 2</td>
+            <td>Mittlere Raumluftqualität<br>
+                <ul>
+                    <li>Erhöhung der CO<sub>2</sub>-Konzentration gegenüber der Außenluft in ppm: &gt;&nbsp;400-600</li>
+                    <li>Absolute CO<sub>2</sub>-Konzentration in der Innenraumluft in ppm: &gt;&nbsp;800-1000</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>IDA 3</td>
+            <td>Mäßige Raumluftqualität<br>
+                <ul>
+                    <li>Erhöhung der CO<sub>2</sub>-Konzentration gegenüber der Außenluft in ppm: &gt;&nbsp;600-1000</li>
+                    <li>Absolute CO<sub>2</sub>-Konzentration in der Innenraumluft in ppm: &gt;&nbsp;1000-1400</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>IDA 4</td>
+            <td>Niedrige Raumluftqualität<br>
+                <ul>
+                    <li>Erhöhung der CO<sub>2</sub>-Konzentration gegenüber der Außenluft in ppm: &gt;&nbsp;1000</li>
+                    <li>Absolute CO<sub>2</sub>-Konzentration in der Innenraumluft in ppm: &gt;&nbsp;1400</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table><br>
+<h3>CPS zur Erfassung der Umgebungsluft</h3>
+<p>Ein cyber-physisches System, das neben Temperatur und Luftfeuchtigkeit auch die Kohlendioxid-Konzentration in der Umgebungsluft erfasst und den CO<sub>2</sub>-Anteil in ppm über WLAN oder Bluetooth übertragen kann, ist&nbsp;in der folgenden Abbildung
+    dargestellt. Der&nbsp;CO<sub>2</sub>-Sensor (MH-Z19B) misst den Kohlendioxid-Gehalt der Umgebungsluft nach dem NDIR-Prinzip.</p>
+<p>Bei einem cyber-physischen System sind für Fachinformatikerinnen und Fachinformatiker die Informationsflüsse von höchster Relevanz. Neben&nbsp;den&nbsp;exemplarisch dargestellten Informationen am Eingang und am Ausgang des Systems sind auch die internen
+    Informationsflüsse von großer Bedeutung. Um&nbsp;beispielsweise&nbsp;Sensoren und Aktoren mit dem Mikrocontrollerboard zu verbinden, stehen im Wesentlichen die Varianten zur Anbindung zur Verfügung, die&nbsp;in der Liste unten aufgeführt sind.<br></p>
+<p><br></p>
+<p style="text-align: center;"><img src="https://lernen.rkibbw.de/draftfile.php/42/user/draft/373327714/Westermann%20CPS%20EVA-Prinzip%20CO2-Sensor.png" alt="EVA-Prinzip mit Raumklima-Sensoren, Verarbeitungseinheit und Ausgabe" width="1733" height="763" class="img-responsive atto_image_button_text-bottom"><br></p>
+<p><br></p>
+<p>In der oberen Abbildung sind die Verbindungen der verwendeten Sensoren mit GPIO, UART und I2C gekennzeichnet. Dies&nbsp;sind&nbsp;Abkürzungen für wichtige Schnittstellen bei Mikrocontrollern und Einplatinencomputern. In&nbsp;der&nbsp;folgenden Liste sind
+    die Eigenschaften der genannten Schnittstellen beschrieben.<br></p>
+<ul>
+    <li><strong>GPIO</strong> (General Purpose Input/Output) bezeichnet universelle Ein- und Ausgänge, die&nbsp;durch die Programmierung frei bestimmbar sind. In&nbsp;den&nbsp;meisten&nbsp;Fällen sind die GPIO-Pins als Stiftleiste oder als Lötpunkte auf den
+        Einplatinencomputern und Mikrocontrollerboards angebracht und dienen als Schnittstelle für digitale und analoge Signale von außen (Input) oder für Signale nach außen (Output).</li>
+    <li><strong>UART</strong> (Universal Asynchronous Receiver and Transmitter) ist eine recht einfache Schnittstelle, weswegen man nur zwei Datenleitungen benötigt. Eine&nbsp;Leitung&nbsp;sendet Daten (Transmit Data TX) an ein zweites Gerät. Die&nbsp;Leitung&nbsp;wird
+        am zweiten Gerät an dessen „Empfangs-Pin“ angeschlossen (Receive Data RX). In&nbsp;der&nbsp;Umkehrung verbindet sich der TX-Pin des zweiten Geräts mit dem RX-Pin des ersten Geräts. UART&nbsp;verwendet&nbsp;keinen Clock (Takt) zum Takten des Signals,
+        sondern benutzt Start- und Stop-Bits. Der&nbsp;Empfänger&nbsp;beginnt mit dem Lesen der Daten, sobald er ein Start-Bit erhalten hat und macht dies so lange, bis&nbsp;er das Stop-Bit empfängt. Die&nbsp;sogenannte BAUD-Rate legt fest, mit welcher
+        Geschwindigkeit die Daten gesendet werden. Die&nbsp;Einheit&nbsp;BAUD wurde nach dem Franzosen Émile Baudot benannt und steht für die Einheit der seriellen Übertragungsgeschwindigkeit (1&nbsp;BAUD = 1&nbsp;Bit/s).</li>
+    <li><strong>I2C</strong> steht für Inter-Integrated-Circuit. Die&nbsp;beiden&nbsp;I&nbsp;aus Inter-Integrated werden zusammengenommen und als I<sup>2</sup>C oder I2C geschrieben. Gesprochen&nbsp;wird&nbsp;die&nbsp;Abkürzung als „I-Quadrat-C“ oder im Englischen
+        „I-Squared-C“. Seinen&nbsp;Ursprung&nbsp;hat dieses Bus-System in den frühen 1980er-Jahren. Es&nbsp;wurde&nbsp;vom&nbsp;Unternehmen Philips mit dem Ziel entwickelt, eine einfache Kommunikation zwischen zwei Komponenten zu schaffen. Vergleichbar&nbsp;mit&nbsp;UART&nbsp;hat
+        I2C ebenfalls nur zwei Leitungen. Eine&nbsp;davon&nbsp;ist&nbsp;die SDA-Leitung (Serial Data Line), um&nbsp;Daten zu übertragen. Die&nbsp;andere&nbsp;ist&nbsp;die SCL-Leitung (Serial Clock Line), um einen Takt-Impuls zu übertragen. Im&nbsp;Gegensatz&nbsp;zu&nbsp;UART
+        erfolgt die Kommunikation bei I2C synchron durch die SCL-Leitung. Daher&nbsp;sind&nbsp;Geschwindigkeiten von 100&nbsp;Kbit/s bis zu 3,4&nbsp;Mbit/s im Highspeed-Modus erreichbar. Bei&nbsp;I2C&nbsp;können&nbsp;bis&nbsp;zu 128 Teilnehmer kommunizieren
+        (bei&nbsp;einer 7-bit-Adressierung). Jeder&nbsp;davon&nbsp;hat eine eindeutige Adresse. Insgesamt&nbsp;112&nbsp;Adressen können frei genutzt werden, die restlichen sind fest reserviert. Die&nbsp;Datenübertragungsgeschwindigkeit wird bestimmt,
+        indem während jedes Takt-Zyklus ein Datenbit übertragen wird.
+    </li>
+    <li><strong>SPI</strong>&nbsp;(Serial Peripheral Interface) wurde 1987 von Motorola entwickelt. Anders&nbsp;als&nbsp;bei&nbsp;I2C und UART werden für die Kommunikation über die SPI-Schnittstelle vier Leitungen benötigt.
+        <ul>
+            <li>SCL – Serial Clock Leitung: Clock (Takt) wird vom Master ausgegeben</li>
+            <li>MOSI – Master Output/Slave Input: Leitung&nbsp;für&nbsp;Daten vom Master zum Slave</li>
+            <li>MISO – Master Input/Slave Output: Leitung&nbsp;für&nbsp;Daten vom Slave zum Master</li>
+            <li>CS – Chip Select: Auf dieser Leitung gibt der Master ein LOW-Signal aus, um&nbsp;mit dem entsprechenden Slave, der&nbsp;an dieser CS-Leitung angeschlossen ist, zu kommunizieren. Wenn&nbsp;der&nbsp;Master die CS-Leitung wieder auf HIGH setzt,
+                ist&nbsp;die Kommunikation mit dem Slave abgeschlossen.</li>
+        </ul>
+        SPI ist voll duplexfähig. Mit&nbsp;den&nbsp;beiden&nbsp;Datenleitungen (MOSI und MISO) können Daten mit bis zu 20&nbsp;Mbit/s ausgetauscht werden. Im&nbsp;Unterschied&nbsp;zu I2C kann man bei SPI nur einen Master im Netzwerk einsetzen und die Anzahl der
+        Slaves ist nur von der Verfügbarkeit der Pins (für&nbsp;die CS-Leitungen) vom Mikrocontroller abhängig.</li>
+</ul>
+
+<p><br></p>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&amp;family=Open+Sans:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/theme/styles.php/space/1678549506_1/all">
+    <link rel="stylesheet" type="text/css" href="https://lernen.rkibbw.de/filter/syntaxhighlighter/styles/atom-one-light.min.css">
+    <style>
+      body {margin: 5%;}
+    </style>
+  </head>
+  <body>
+    <h1>Ein CPS in Betrieb nehmen</h1>
+    <h2>Arduino programmieren</h2>
+<p>Zur Programmierung eines „Arduino“- oder „ESP32“-Mikrocontrollers kann die Arduino-IDE eingesetzt werden. Die&nbsp;Arduino-IDE basiert auf der Sprache C++. Die&nbsp;Programme&nbsp;werden in dieser integrierten Entwicklungsumgebung als „Sketch“ bezeichnet.</p>
+<p><img src="https://lernen.rkibbw.de/draftfile.php/42/user/draft/744219848/Westermann%20CPS%20Arduino%20Sketch.png" alt="Arduino-Sketch mit markierten drei Bereichen, die im Code durch Trennstriche hinter Kommentarzeichen getrennt sind." width="504" height="620"
+        class="img-responsive atto_image_button_right">Wenn&nbsp;ein&nbsp;Sketch&nbsp;fertig programmiert ist, kann&nbsp;er auf den Speicher des Mikrocontrollerboards hochgeladen werden. Zuvor&nbsp;wird&nbsp;das&nbsp;Programm geprüft und kompiliert. Die&nbsp;Abbildung
+    stellt die drei Bereiche dar, die die allgemeine Grundstruktur eines Sketches ergeben und im Folgenden beschrieben werden.<br></p>
+<h3>Grundstruktur eines „Arduino“-Sketch</h3>
+<h4>Bereich 1 für Bibliotheken, Variablen, Konstanten und zur Initialisierung von Komponenten</h4>
+<p>Im Bereich 1 werden die Elemente des Programms benannt, die global verfügbar sind. Global&nbsp;verfügbar&nbsp;bedeutet, dass&nbsp;diese Werte in allen folgenden Methoden und Funktionen zur Verfügung stehen.</p>
+<p>Wesentliche Elemente, die in diesem Bereich aufgeführt werden, sind:</p>
+<p></p>
+<ul>
+    <li>Programmbibliotheken, die geladen werden sollen – Bibliotheken erweitern den Funktionsumfang der „Arduino“-IDE um weitere Befehle und Funktionen, z.B.&nbsp;von eingebundenen Sensoren und Aktoren,</li>
+    <li>Deklaration von Variablen,</li>
+    <li>Definition von Konstanten,</li>
+    <li>Definition und Initialisierung von unterschiedlichen Sensoren/Aktoren.</li>
+</ul>
+<p></p>
+<p>Dieser Teil ist nicht für jeden Sketch zwingend erforderlich.</p>
+<h4>Bereich 2 für das Setup – Aufruf der Methode „void setup()“</h4>
+<p>In Bereich 2 werden Befehle und Anweisungen aufgerufen, die&nbsp;zu Beginn der Ausführung einmal ausgeführt werden. Wenn&nbsp;sich&nbsp;im Setup-Bereich keine Einträge befinden, so&nbsp;ist der SetupBereich dennoch erforderlich. Im&nbsp;Setup-Bereich
+    wird u.a. festgelegt, an welchen Pins eines Mikrocontrollerboards eine Komponente angeschlossen wird und ob es sich dabei um einen Ein- oder Ausgang handelt.</p>
+<h4>Bereich 3 für die Ablaufsteuerung – Aufruf der Methode „void loop()“</h4>
+<p>In Bereich 3 werden die programmierten Befehle, Anweisungen und Funktionen in einem kontinuierlichen Kreislauf wiederholt. Deswegen&nbsp;wird&nbsp;dieser&nbsp;Bestandteil auch als Hauptelement eines Sketches bezeichnet. Der&nbsp;Loop-Teil bearbeitet einen
+    Sketch vollständig und startet danach automatisch wieder am Anfang des Bereichs.</p>
+<h3>Programmiertipps</h3>
+<p>Ausgabewerte des Programms können zur Kontrolle über den seriellen Monitor angezeigt werden. Dies&nbsp;ermöglicht&nbsp;die&nbsp;direkte Anzeige und Überprüfung der erfassten Werte, ermöglicht aber auch die Ausgabe von Fehlermeldungen beim Debugging, z.B.&nbsp;bei
+    der Überprüfung, ob&nbsp;ein Sensor ordnungsgemäß funktioniert oder ob angeschlossene Komponenten vom Mikrocontroller korrekt erkannt wurden.</p>
+<p>Um wie bei allen Programmen eine gute und übersichtliche Struktur aufzubauen, können Kommentare und Hinweise eingefügt werden. Durch&nbsp;<code>//</code>&nbsp;können direkt dahinter Erklärungen zum Programmcode eingegeben werden und innerhalb der Zeichen
+    <code>/*</code> und <code>*/</code> kann ein größerer Bereich für Informationen genutzt werden. Die&nbsp;Erklärungen&nbsp;in der „Arduino“-Entwicklungsumgebung haben keinen Einfluss auf den Ablauf des Sketches.</p>
+
+<h3>Fehlerquellen</h3>
+<p>Beim Programmieren von Mikrocontrollern kann es zu vielen Fehlern kommen. Die&nbsp;zwei&nbsp;häufigsten&nbsp;Fehler, die während dem Arbeiten mit der „Arduino“-Software auftreten, sind&nbsp;die folgenden:</p>
+<ul>
+    <li>Ein falsches Board wurde ausgewählt oder es wurde nicht richtig installiert. Ist&nbsp;das&nbsp;der&nbsp;Fall, erscheint beim Hochladen des Sketches eine Fehlermeldung im unteren Bereich der Software. Zur&nbsp;Fehlerbehebung&nbsp;muss in der Board-Verwaltung
+        der integrierten Entwicklungsumgebung (IDE) das korrekte Board aktiviert werden.</li>
+    <li>Es gibt einen Syntaxfehler im Sketch. Dies&nbsp;ist&nbsp;der&nbsp;Fall, wenn&nbsp;ein Wort, eine Variable oder ein Befehl falsch geschrieben wurde oder eine notwendige Klammer oder ein Semikolon fehlt.</li>
+</ul>
+<p></p>
+<p><br></p>
+  </body>
+</html>
